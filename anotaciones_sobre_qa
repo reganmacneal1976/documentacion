@@ -1,0 +1,93 @@
+
+X.1	Herramientas de trabajao para el dia a dia de un compañero de QA.
+
+X.2	Flujo de Trabajo dentro del Equipo de QA.
+
+X.3	Wiki de problemas y su resolucion.
+
+X.4	Tener un esquema de los Equipos - grupos - trabajo de cada Modulo.
+
+X.5	Documentacion Funcional - Diseños tecnicos - Plan de Pruebas por Moduclo.
+
+X.6	Documentacion acerca de Pruebas Funcionales / Pruebas No Funcionales. Cuales son los criterios de aceptacion.
+
+X.7	Comunicacion / Creacion de Tickets sobre problemas y bloqueos. -> Mas adelante vemos quienes tienen o quienes tenemos resolverlo.
+
+X.8	Excel / Herramienta para ver, comprobar en el dia a dia y  a ciertas horas como vamos. Sin tener que estar German o Antonio preguntando como el Monje Mayor de la Abadia.
+
+
+
+Vamos a continuacion ver los puntos que creo se deberián de modificar o crear en el Entorno de QA en Stratio.
+
+1.	Welcome Info:
+
+https://stratio.atlassian.net/wiki/spaces/QA/pages/17629199/Welcome+Info
+
+Podemos ver los primeros pasos en Stratio. Yo haria un Primeros pasos en el Equipo de QA.
+
+2.	En la parte de Tools:
+
+Hablamos de Instalations Steps de IntelliJ IDEA	(Community Edition). Indicamos que hay que instalar 2 Plugins de Cucumber. En el momento
+que yo tuve que Instalar tube que desactivar otra Plugin que en la documetacion no existe.
+
+Instalacion de JDK.
+
+Vemos el ejemplo de instalación de JDK (OPEN JDK) en un Entorno Unix con paqueteria RPM. Distribuciones con base en Red Hut.
+Deberiamos de ampliarlo para las versiones de Distribuciones basadas en Debian.
+
+Instalacion y configuración de Maven.
+
+Quizas dar una breve explicación de que es Maven y para que vamos a utilizarlo.
+Entiendo que si viene alguien con experiencia quizas no sea necesario. Pero si incorporamos Minioms o personas junior quizas
+si que sea necesario.
+
+3.	En How to run Acceptans Test.
+
+En el punto de Ejecutar Test.-> Quizas el punto de ejecutar test deberiamos de indicar que son los parametros que le pasamos al mvn -verify.
+
+Repasar el punto de la Confluence Behaviour Driven Testing library. Creo que puede estar algo Deprecado.
+
+Complentar este apartado con algun test pequeño de unas de los modulos que estamos probando.
+
+4.	Docker Images.
+
+dcos-cli. Poner un ejemplo con alguno de los modulos con los que trabajamos habitualmente.
+
+5.	Common Process
+
+ADD REPOSITORY TO CONTINOUS DELIVERY. 
+
+No solo poner los que necesita el repositorio. Quizas faltan ejemplos de como deben de hacerse este caso, al igual que existe en el punto siguiente.
+
+Bugs Managment. En que momento y de que manera desde QA debemos de abrir, cambiar de estado, modificar un ticket abierto. Si encontramos un error cuando debemos y como 
+debemos de abrir dicho ticket. Ejemplo: Se encuentran problemas para desplegar un Modulo en un Entorno.
+
+Deberiamos de actualizar el punto NON-FUNCTIONAL TEST REPOSITORY?????
+
+6.	Test Project Structure:
+
+Quizas este punto se deberia de unificar y actualizar junto con el ultimo punto encontrado dentro Common Process, asi como en 
+añair dentro del Welcome info and Configuracion de entorno de QA.
+
+12.	Setuo (Deprecated).
+Dentro del Welcome Info insertar la informacion sobre Docker. Instalacion, configuracion y How to de como se trabaja con el.
+
+Automatic Docker Enviroment.
+
+Install Weave Installation -> Introducirlo dentro de Welcome info. Crear un Indice y poder editar y crear la documentacion necesaria.
+
+Docker Componse.
+
+15.	QA Workflow. Indicar e incluirlo en Welcome info.
+Incluso que fuera el primer documento que se deberia de leer uno para conocer cual es nuestro trabajo.
+
+
+
+
+
+
+
+
+
+
+Deberiamos de revisar el orden en que se encuentra la Documentación en Confluence y tratar de llevar un orden.

@@ -1,0 +1,50 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+
+<dom-module id="form-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+        text-align: center;
+      }
+      paper-card{
+        text-align: left;
+        width: 400px;
+        padding: 0 1em 1em 1em;
+      }
+      paper-card .card-actions{
+        padding-top: 1em;
+        text-align: right;
+      }
+      paper-button{
+        background-color: var()
+      }
+    </style>
+    
+    <paper-card heading="Crear cuenta" image="" evelation="4" animated-shadow="flase">
+      <form>
+      <div class="card-content"></div>
+        <paper-input label="Email"></paper-input>
+        <paper-input label="Contraseña"></paper-input>
+      <div class="card-actions"></div>
+        <paper-button raised>Enviar</paper-button>
+        <paper-button>Cancelar</paper-button>
+
+
+        </div>
+      </form>
+    </paper-card>
+
+
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'form-app'
+    });
+  </script>
+</dom-module>

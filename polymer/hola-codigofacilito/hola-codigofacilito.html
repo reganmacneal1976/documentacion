@@ -1,0 +1,46 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-input/paper-input.html">
+<link rel="import" href="./nombre-codigofacilito.html">
+
+<dom-module id="hola-codigofacilito">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <paper-input label="Nombre" value={{name}}></paper-input>
+    <h1 id="titulo">Hola <nombre-codigofacilito name="[[name]]"></nombre-codigofacilito>, tengo [[edad]]</h1>
+    <content></content>
+  </template>
+
+  <script>
+    Polymer({
+      is: "hola-codigofacilito",
+      properties:{
+        name: {
+          type: String,
+          value: "default"
+        },
+        edad: {
+          type: Number
+        }
+      },
+      created: function(){
+        
+      },
+      ready: function(){
+        
+      },
+      attached: function(){
+        
+      },
+      detached: function(){
+      },
+      attributeChanged: function(){
+        
+      }
+    })
+    
+  </script>
+</dom-module>

@@ -1,0 +1,19 @@
+{
+    "src_folders" : ["tets"],
+    "output_folder" : "reports",
+    
+    "selenium" : {
+       "start_process" : true,
+       "server_path" : ""
+    },
+
+    "test_settingS" : {
+        "default" : {
+            "desiredCapabilities" : {
+                "browserName" : "safari",
+                "javascriptEnabled" : true,
+                "acceptSslCerts" : true 
+            } 
+        }
+    }
+}

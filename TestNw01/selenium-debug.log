@@ -1,0 +1,86 @@
+16:29:19.970 INFO - Selenium build info: version: '3.0.1', revision: '1969d75'
+16:29:19.971 INFO - Launching a standalone Selenium Server
+2017-10-26 16:29:19.999:INFO::main: Logging initialized @309ms
+16:29:20.043 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+16:29:20.044 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+16:29:20.044 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+16:29:20.044 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+16:29:20.044 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+16:29:20.044 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+2017-10-26 16:29:20.079:INFO:osjs.Server:main: jetty-9.2.15.v20160210
+2017-10-26 16:29:20.097:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@52bf72b5{/,null,AVAILABLE}
+2017-10-26 16:29:20.117:INFO:osjs.ServerConnector:main: Started ServerConnector@30c15d8b{HTTP/1.1}{0.0.0.0:4444}
+2017-10-26 16:29:20.117:INFO:osjs.Server:main: Started @428ms
+16:29:20.117 INFO - Selenium Server is up and running
+16:29:20.275 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+16:29:20.306 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, start-maximized=true, name=Test, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[start-fullscreen, start-maximized]}, platform=ANY, cssSelectorsEnabled=true}]])
+16:29:20.327 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, start-maximized=true, name=Test, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[start-fullscreen, start-maximized]}, platform=ANY, cssSelectorsEnabled=true}]
+16:29:20.597 WARN - Exception thrown
+java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:48:19 -0700'
+System info: host: 'MacBook-Pro-de-Regan.local', ip: '192.168.1.36', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '9'
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.openqa.selenium.remote.server.DefaultSession.execute(DefaultSession.java:183)
+	at org.openqa.selenium.remote.server.DefaultSession.<init>(DefaultSession.java:119)
+	at org.openqa.selenium.remote.server.DefaultSession.createSession(DefaultSession.java:95)
+	at org.openqa.selenium.remote.server.DefaultDriverSessions.newSession(DefaultDriverSessions.java:131)
+	at org.openqa.selenium.remote.server.handler.NewSession.handle(NewSession.java:59)
+	at org.openqa.selenium.remote.server.handler.NewSession.handle(NewSession.java:36)
+	at org.openqa.selenium.remote.server.rest.ResultConfig.handle(ResultConfig.java:111)
+	at org.openqa.selenium.remote.server.JsonHttpCommandHandler.handleRequest(JsonHttpCommandHandler.java:189)
+	at org.openqa.selenium.remote.server.DriverServlet.handleRequest(DriverServlet.java:222)
+	at org.openqa.selenium.remote.server.DriverServlet.doPost(DriverServlet.java:184)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.openqa.selenium.remote.server.DriverServlet.service(DriverServlet.java:150)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.openqa.selenium.WebDriverException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:48:19 -0700'
+System info: host: 'MacBook-Pro-de-Regan.local', ip: '192.168.1.36', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '9'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:113)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.newInstance(DefaultDriverProvider.java:97)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:60)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:222)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:209)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:103)
+	... 9 more
+Caused by: java.lang.IllegalStateException: The driver is not executable: /Users/reganmacneal1971/development/TestNw01/bin/chromedriver_mac64.zip
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:142)
+	... 14 more
+16:29:20.602 WARN - Exception: The driver is not executable: /Users/reganmacneal1971/development/TestNw01/bin/chromedriver_mac64.zip
